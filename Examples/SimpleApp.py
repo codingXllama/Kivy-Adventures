@@ -1,10 +1,21 @@
 from kivy.app import App
-from kivy.uix.button import Button
+
+# Allows us to change screen res and size, change and rotate the image size and much more
+from kivy.uix.scatter import Scatter
+from kivy.uix.label import Label
+# allows us to work with different screen res
+from kivy.uix.floatlayout import FloatLayout
 
 
 class SimpleApp(App):
     def build(self):
-        return Button(text='Welcome to the App', background_color=(0, 10, 1, 1), font_size=50)
+        myFloatLayout = FloatLayout()
+        myScatter = Scatter()
+        myLabel = Label(text="Welcome", font_size=110)
+
+        myFloatLayout.add_widget(myScatter)
+        myScatter.add_widget(myLabel)
+        return myFloatLayout
 
 
 if __name__ == "__main__":
