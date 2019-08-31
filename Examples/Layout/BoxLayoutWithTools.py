@@ -1,6 +1,6 @@
-from kivy.uix.boxlayout import  BoxLayout
+from kivy.uix.boxlayout import BoxLayout
 from kivy.app import App
-from kivy.lang import   Builder
+from kivy.lang import Builder
 from kivy.base import runTouchApp
 
 
@@ -17,5 +17,3 @@ BoxLayout:
 
 
 """))
-
-
