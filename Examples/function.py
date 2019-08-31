@@ -5,8 +5,11 @@ from kivy.uix.button import Button
 
 class Class1(BoxLayout):
 
-    def __init__(self, **kwrags):
+    def __init__(self, **kwargs):
         super(Class1, self).__init__(**kwargs)
+
+        # Creating button padding
+        self.padding = 200
 
         button = Button(text="Codingxllama")
         self.add_widget(button)
@@ -18,4 +21,4 @@ class Class2(App):
 
 
 if __name__ == "__main__":
-    Class2.run()
+    Class2().run()
