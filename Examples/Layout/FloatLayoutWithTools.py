@@ -1,23 +1,17 @@
-from kivy.uix.floatlayout import FloatLayout
-from kivy.app import App
 from kivy.lang import Builder
-from kivy.base import runTouchApp
+from kivy.base import  runTouchApp
 
 runTouchApp(Builder.load_string("""
+<Button>:
+    color:.8,.2,0,1
+    font_size:50
+    size_hint:.3, .2
+
 FloatLayout:
-    orientation:'horizontal'
-    padding: 100
-    space: 10
     Button:
-        text: 'Hello'
+        text:'B1'
+        pos_hint:{'x': 0, 'top':1}
     Button:
-        text: 'Goodbye'                               
-                                """))
-
-
-class myApp(FloatLayout):
-    pass
-
-
-if __name__ == "__main__":
-    runTouchApp(myApp())
+        text:'B2'
+        pos_hint:{'y':0, 'right':1}
+"""))
