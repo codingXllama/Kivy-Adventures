@@ -17,6 +17,6 @@ class SimpleApp(App):
         myScatter.add_widget(myLabel)
         return myFloatLayout
 
-
+#
 if __name__ == "__main__":
     SimpleApp().run()
